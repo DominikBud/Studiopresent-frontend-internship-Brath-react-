@@ -249,6 +249,11 @@ footer {
           align-items: center;
           justify-content: center;
           gap: 10px;
+
+          a {
+            cursor: pointer;
+          }
+
           @media (min-width: 1080px) {
             justify-content: right;
           }
@@ -265,8 +270,15 @@ footer {
     .content__wrapper__bottom {
       display: flex;
       justify-content: right;
+      @media (min-width: 1080px) {
+        width: 80%;
+      }
     }
   }
+}
+
+.bottom__wrapper.dark__mode {
+  background-color: $white;
 }
 
 .mobile__menu__wrapper {
@@ -330,9 +342,10 @@ footer {
     width: 90%;
   }
   @media (min-width: 1080px) {
-    width: 70%;
+    width: 80%;
   }
 }
+
 .gray__line {
   height: 1px;
   width: 100%;
@@ -574,4 +587,62 @@ footer {
   align-items: center;
   flex-direction: column;
   gap: 20px;
+}
+
+.swiper {
+  overflow: visible;
+  height: min-content;
+  width: 500px;
+}
+
+.swiper-wrapper {
+  overflow: visible;
+}
+
+.swiper-slide {
+  height: 200px;
+  width: min-content;
+  overflow: visible;
+}
+
+.slider__card {
+  padding: 30px;
+  background-color: $slider-card-bg;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  width: 400px;
+  overflow: visible;
+
+  overflow: visible;
+
+  .quotes {
+    position: absolute;
+    top: 4%;
+    right: 10%;
+  }
+}
+.foodNav__section {
+  padding-bottom: 100px;
+}
+
+.column--12.column--aligned-left {
+  @media (min-width: 1080px) {
+    padding-right: 30px;
+
+    h2 {
+      width: 100%;
+      text-align: left;
+    }
+    p {
+      width: 100%;
+
+      text-align: left;
+    }
+    div {
+      justify-content: left;
+    }
+  }
 }
