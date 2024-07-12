@@ -5,6 +5,7 @@ function Popup() {
 
   const closePopup = () => {
     setShowPopup(false);
+    document.body.style.overflow = "auto";
   };
 
   useEffect(() => {
@@ -13,8 +14,10 @@ function Popup() {
     if (!hasShownPopup) {
       const timer = setTimeout(() => {
         setShowPopup(true);
+        document.body.style.overflow = "hidden";
+
         localStorage.setItem("hasShownPopup", "true");
-      }, 30000);
+      }, 3000);
 
       return () => clearTimeout(timer);
     }
@@ -25,17 +28,21 @@ function Popup() {
       {showPopup && (
         <div className="popup">
           <form className="form__popup">
-            <p className="text text--bold-22 dark__mode">
-              Join our newsletter!
-            </p>
+            <div className="row">
+              <img src="/src/assets/icons/logo/bl-withdots.svg" />
+              <p className="text text--bold-32">Join our newsletter!</p>
+            </div>
+            <input type="text dark__mode" placeholder="Enter your name" />
             <input type="text dark__mode" placeholder="Enter your email" />
-            <button className="default__button--red">Join Newsletter</button>
-            <button
-              className="default__button--red close__button"
-              onClick={() => closePopup()}
-            >
-              Close
-            </button>
+
+            <div className="row">
+              <button className="default__button--red" onClick={closePopup}>
+                Join Newsletter
+              </button>
+              <button className="default__button--red" onClick={closePopup}>
+                Close
+              </button>
+            </div>
           </form>
         </div>
       )}

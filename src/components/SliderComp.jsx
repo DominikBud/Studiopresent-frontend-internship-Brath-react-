@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import RecommendationCard from "./RecommendationCard";
 import "swiper/css/bundle";
+import "swiper/css/navigation"; // Import Navigation styles
 
 const recommendationItems = [
   {
@@ -35,6 +36,10 @@ function SliderComp() {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         style={{ width: "100%", height: "100%" }}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
       >
         {recommendationItems.map((element, _i) => (
           <SwiperSlide key={_i}>
