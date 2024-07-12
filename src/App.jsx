@@ -79,7 +79,7 @@ function App() {
         </section>
 
         <SplitSection image={"/src/assets/food-5050.svg"}>
-          <div className="row row--vertical gap--xl">
+          <div className="row row--vertical gap--xl ">
             <h2 className="text  text--bold-32">
               Buchen Sie den Grillkurs jetzt
             </h2>
@@ -100,8 +100,10 @@ function App() {
           <div className="page__container">
             <div className="row row--vertical gap--xl">
               <div className="row row--vertical gap--none">
-                <h2 className="text  text--bold-32">Dry aged</h2>
-                <p className="text  text--bold-22">Alte Wutz, Dry Aged</p>
+                <h2 className="text  text--bold-32">Das Handwerk</h2>
+                <p className="text  text--bold-22">
+                  alles über unsere Hausgemachte Produkte
+                </p>
               </div>
               <div className="row row--vertical row--text-center information__wrapper">
                 <p className="text  text--300-16">
@@ -136,20 +138,14 @@ function App() {
                   Turnbeutel nostrudexercitation ullamco Sprechen Sie deutsch
                 </p>
               </div>
-              <div className="row row--vertical row--text-center">
+              <div className="row row--vertical row--text-center gap--xl">
                 <p className="text  text--300-16">
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage, and going through the cites of the
-                  word in classical literature, discovered the undoubtable
-                  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
-                  de Finibus Bonorum et The Extremes of Good and Evil by Cicero,
-                  written in 45 BC. This book is a treatise on the theory of
-                  ethics, very popular during the Renaissance. The first line of
-                  Lorem Ipsum,Lorem ipsum dolor sit amet.., comes from a line in
+                  Contrary to popular belief, Lorem Ipsum is not simply random a
+                  Latin professor at Hampden-Sydney College in Virginia, looked
+                  up one of the more obscure Latin words, consectetur, written
+                  in 45 BC. This book is a treatise on the theory of ethics,
+                  very popular during the Renaissance. The first line of Lorem
+                  Ipsum,Lorem ipsum dolor sit amet.., comes from a line in
                   section 1.10.32.
                 </p>
                 <p className="text  text--300-16">
@@ -197,7 +193,7 @@ function App() {
           <div className="page__container">
             <div className="row row--vertical gap--xl">
               <div className="row row--vertical">
-                <p className="text text--bold-22">Empfehlungs</p>
+                <p className="text text--bold-22 text--opacity">Empfehlungs</p>
                 <h2 className="text text--bold-32">
                   Was die Leute über uns sagen
                 </h2>

@@ -1,4 +1,4 @@
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import RecommendationCard from "./RecommendationCard";
@@ -31,11 +31,10 @@ function SliderComp() {
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
-        breakpoints={{}}
-        width={{ width: "350px" }}
-        modules={[Navigation, Pagination]}
+        modules={[Navigation]}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
+        style={{ width: "100%", height: "100%" }}
       >
         {recommendationItems.map((element, _i) => (
           <SwiperSlide key={_i}>
@@ -47,6 +46,9 @@ function SliderComp() {
             ></RecommendationCard>
           </SwiperSlide>
         ))}
+
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
       </Swiper>
     </div>
   );
