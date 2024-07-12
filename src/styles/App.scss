@@ -42,7 +42,8 @@ body {
 }
 .text {
   color: $white;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serifs;
+
   margin: 0;
 }
 .text.dark__mode {
@@ -356,6 +357,11 @@ footer {
   margin-inline: 10px;
 }
 
+.information__wrapper {
+  width: 60%;
+  margin-inline: auto;
+}
+
 .foodnav__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -397,22 +403,24 @@ footer {
   row-gap: 40px;
 
   @media (min-width: 1080px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 
+  align-items: center;
+  text-align: center;
+
   div {
+    p {
+      color: $main-gray;
+    }
     img {
-      height: 175px;
-      width: 175px;
+      height: 125px;
+      margin-bottom: 15px;
     }
   }
 
   .first__cell--awards {
     grid-column: span 2;
-
-    @media (min-width: 1080px) {
-      grid-column: span 4;
-    }
 
     text-align: center;
     padding: 30px;
@@ -424,6 +432,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  padding-inline: 20px;
   padding-block: 30px;
 
   @media (min-width: 768px) {
@@ -551,8 +560,6 @@ footer {
     text-align: center;
 
     @media (min-width: 1080px) {
-      top: 50%;
-
       h1 {
         text-align: right;
       }
@@ -560,7 +567,7 @@ footer {
 
     @media (min-width: 768px) {
       position: absolute;
-      top: 20%;
+      top: 30%;
       width: 50%;
     }
   }
@@ -589,22 +596,6 @@ footer {
   gap: 20px;
 }
 
-.swiper {
-  overflow: visible;
-  height: min-content;
-  width: 500px;
-}
-
-.swiper-wrapper {
-  overflow: visible;
-}
-
-.swiper-slide {
-  height: 200px;
-  width: min-content;
-  overflow: visible;
-}
-
 .slider__card {
   padding: 30px;
   background-color: $slider-card-bg;
@@ -613,6 +604,7 @@ footer {
   flex-direction: column;
   text-align: center;
   gap: 50px;
+  height: min-content;
   width: 400px;
   overflow: visible;
 
@@ -643,6 +635,19 @@ footer {
     }
     div {
       justify-content: left;
+    }
+  }
+}
+
+.jre__section {
+  .page__container {
+    .row {
+      @media (min-width: 1080px) {
+        flex-direction: row;
+      }
+      div {
+        flex-direction: column;
+      }
     }
   }
 }

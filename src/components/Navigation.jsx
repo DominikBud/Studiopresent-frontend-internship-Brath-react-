@@ -49,8 +49,14 @@ function Navigation() {
                 darkMode == true ? "dark__mode" : ""
               }`}
             >
-              <span className="text  text--bold-14">Opens: </span>Di. - Fr.:
-              07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30
+              <span
+                className={`text  text--bold-14 ${
+                  darkMode == true ? "dark__mode" : ""
+                }`}
+              >
+                Opens:{" "}
+              </span>
+              Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30
             </p>
           </div>
         </div>

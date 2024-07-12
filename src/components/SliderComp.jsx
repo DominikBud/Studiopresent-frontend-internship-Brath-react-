@@ -2,6 +2,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import RecommendationCard from "./RecommendationCard";
+import "swiper/css/bundle";
 
 const recommendationItems = [
   {
@@ -26,29 +27,28 @@ const recommendationItems = [
 
 function SliderComp() {
   return (
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={1}
-      breakpoints={{
-        1024: {
-          slidesPerView: 3,
-        },
-      }}
-      modules={[Navigation, Pagination]}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      {recommendationItems.map((element, _i) => (
-        <SwiperSlide key={_i}>
-          <RecommendationCard
-            image={element.image}
-            text={element.text}
-            name={element.name}
-            position={element.position}
-          ></RecommendationCard>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="slider__wrapper">
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        breakpoints={{}}
+        width={{ width: "350px" }}
+        modules={[Navigation, Pagination]}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        {recommendationItems.map((element, _i) => (
+          <SwiperSlide key={_i}>
+            <RecommendationCard
+              image={element.image}
+              text={element.text}
+              name={element.name}
+              position={element.position}
+            ></RecommendationCard>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }
 

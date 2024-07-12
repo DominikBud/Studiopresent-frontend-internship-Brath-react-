@@ -7,15 +7,15 @@ const awardsElements = [
   },
   {
     text: "Tollit argumentum genau Saepe lobortis",
-    image: "/src/assets/icons/awards/award1.svg",
+    image: "/src/assets/icons/awards/award2.svg",
   },
   {
     text: "Tollit argumentum genau Saepe lobortis",
-    image: "/src/assets/icons/awards/award1.svg",
+    image: "/src/assets/icons/awards/award3.svg",
   },
   {
     text: "Tollit argumentum genau Saepe lobortis",
-    image: "/src/assets/icons/awards/award1.svg",
+    image: "/src/assets/icons/awards/award4.svg",
   },
 ];
 

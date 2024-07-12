@@ -3,20 +3,20 @@ import FoodNavigationLink from "./FoodNavigationLink";
 
 const foodNavigationElements = [
   {
-    image: "/src/assets/food-5050.svg",
-    text: "Sample",
+    image: "/src/assets/gallery-section/gallery1.svg",
+    text: "Dry aged",
   },
   {
-    image: "/src/assets/food-5050.svg",
-    text: "Sample",
+    image: "/src/assets/gallery-section/gallery2.svg",
+    text: "Die Metzgere",
   },
   {
-    image: "/src/assets/food-5050.svg",
-    text: "Sample",
+    image: "/src/assets/gallery-section/gallery3.svg",
+    text: "Events/Kurse",
   },
   {
-    image: "/src/assets/food-5050.svg",
-    text: "Sample",
+    image: "/src/assets/gallery-section/gallery4.svg",
+    text: "Impressum",
   },
 ];
 

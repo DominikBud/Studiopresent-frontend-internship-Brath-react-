@@ -25,7 +25,7 @@ function App() {
                 <h1 className="text text--bold-38">
                   Heiko Brath Metzgermeister
                 </h1>
-                <p className="text text--300-16">
+                <p className="text text--regular-16">
                   Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
                   Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per
                   ne, nam Aperol Spritz probatus pertinax.
@@ -103,7 +103,7 @@ function App() {
                 <h2 className="text  text--bold-32">Dry aged</h2>
                 <p className="text  text--bold-22">Alte Wutz, Dry Aged</p>
               </div>
-              <div className="row row--vertical row--text-center">
+              <div className="row row--vertical row--text-center information__wrapper">
                 <p className="text  text--300-16">
                   Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
                   Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per
